@@ -59,7 +59,7 @@ The project is structured into modular scripts:
 ## 📊 Empirical Results (Preview)
 
 | Model | RMSE | QLIKE | Rank |
-| :--- | :---: | :---: | :---: |
+| :- | :-: | :-: | :-: |
 | **EGARCH-Asym (Proposed)** | **1.8912** | **0.3366** | **1** |
 | Baseline EGARCH(1,1) | 2.0151 | 0.3473 | 2 |
 | EGARCH-SVI (Aggregate) | 2.0291 | 0.3500 | 3 |
