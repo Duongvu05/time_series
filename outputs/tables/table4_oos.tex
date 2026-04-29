@@ -1,0 +1,18 @@
+\begin{table}[H]
+\centering
+\caption{Out-of-Sample Forecasting Performance (Q1 2026, $N = 56$ Days)}
+\label{tab:oos}
+\small
+\begin{tabular}{lccc}
+\toprule
+Model & RMSE & QLIKE & Rank \\
+\midrule
+        \textbf{Extended EGARCH-Asym} & \textbf{1.8912} & \textbf{0.3366} & \textbf{1} \\
+        Baseline EGARCH(1,1) & 2.0151 & 0.3473 & 2 \\
+        Extended EGARCH-SVI & 2.0291 & 0.3499 & 3 \\
+        Baseline GARCH(1,1) & 2.2702 & 0.3736 & 4 \\
+\bottomrule
+\end{tabular}
+\smallskip\\
+\footnotesize\textit{Note: Lower values indicate better forecast accuracy. RMSE = Root Mean Squared Error; QLIKE = Quasi-Likelihood loss (robust to imperfect volatility proxies).}
+\end{table}

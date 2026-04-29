@@ -1,0 +1,25 @@
+\begin{table}[H]
+\centering
+\caption{In-Sample Parameter Estimates --- GARCH Family Models (Student-$t$ Innovations, 2010--2025)}
+\label{tab:insample}
+\small
+\begin{tabular}{lcccc}
+\toprule
+Parameter & GARCH(1,1) & EGARCH(1,1) & EGARCH-SVI & EGARCH-Asym \\
+\midrule
+$\omega$               & 0.0589*** & 0.0183*** & 0.0183*** & 0.0185*** \\
+$\alpha$               & 0.1601*** & 0.2804*** & 0.2807*** & 0.2825*** \\
+$\beta$                & 0.8091*** & 0.9425*** & 0.9421*** & 0.9428*** \\
+$\gamma$ (Leverage)    & --- & $-$0.0736*** & $-$0.0744*** & $-$0.0710*** \\
+$\theta$ (SVI)         & --- & --- & 0.0421 ($p$=0.156) & --- \\
+$\theta_1$ ($SVI_{pos}$) & --- & --- & --- & $-$0.0058 ($p$=0.734) \\
+$\theta_2$ ($SVI_{neg}$) & --- & --- & --- & \textbf{$-$0.0365** ($p$=0.012)} \\
+$\nu$ (Student-$t$)    & 5.0553*** & 5.2392*** & 5.2372*** & 5.2410*** \\
+\midrule
+Log-Likelihood & $-5729.19$ & $-5706.09$ & $-5705.05$ & $\mathbf{-5703.48}$ \\
+AIC            & $11468.4$ & $11424.2$ & $11424.1$ & $\mathbf{11423.0}$ \\
+\bottomrule
+\end{tabular}
+\smallskip\\
+\footnotesize\textit{Note: *** $p<0.01$; ** $p<0.05$; * $p<0.10$. All models estimated by QML with Student-$t$ innovations. Bold entries indicate best-performing specification.}
+\end{table}

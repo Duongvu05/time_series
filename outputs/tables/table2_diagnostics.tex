@@ -1,0 +1,20 @@
+\begin{table}[H]
+\centering
+\caption{Preliminary Diagnostic Test Results (In-Sample)}
+\label{tab:diagnostics}
+\small
+\begin{tabular}{llccc}
+\toprule
+Test & Series & Statistic & $p$-value & Decision \\
+\midrule
+Jarque-Bera (JB)  & Log Return       & 2,910.69 & $<$0.001 & Reject $H_0$ (non-normal) \\
+ADF Unit Root     & Log Return       & -41.40 & $<$0.001 & Stationary \\
+ADF Unit Root     & SVI (aggregate)  & -2.32  & 0.166    & Non-stationary \\
+ADF Unit Root     & $SVI_{pos}$      & ---      & $<$0.001 & Stationary \\
+ADF Unit Root     & $SVI_{neg}$      & ---      & $<$0.001 & Stationary \\
+ARCH-LM           & Residuals        & 484.98   & $<$0.001 & ARCH effects present \\
+\bottomrule
+\end{tabular}
+\smallskip\\
+\footnotesize\textit{Note: ADF = Augmented Dickey-Fuller (lags by AIC). ARCH-LM uses 10 lags. $p$-values $<$ 0.001 reported as exact.}
+\end{table}

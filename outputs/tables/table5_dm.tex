@@ -1,0 +1,18 @@
+\begin{table}[H]
+\centering
+\caption{Diebold-Mariano Test Results (HAC Standard Errors, Newey-West Lag = 1)}
+\label{tab:dm}
+\small
+\begin{tabular}{llcccc}
+\toprule
+Model Comparison & Metric & Mean Diff. & DM-Stat & $p$-value & Decision (5\%) \\
+\midrule
+        EGARCH-SVI vs. Baseline & QLIKE & -0.0026 & -1.412 & 0.158 & Fail to Reject $H_0$ \\
+        EGARCH-SVI vs. Baseline & SE (RMSE) & -0.0567 & -2.256 & 0.024 & \textbf{Reject $H_0$} \\
+        EGARCH-Asym vs. Baseline & QLIKE & 0.0108 & 1.679 & 0.093 & Fail to Reject $H_0$ \\
+        EGARCH-Asym vs. Baseline & SE (RMSE) & 0.4837 & 2.295 & 0.022 & \textbf{Reject $H_0$} \\
+\bottomrule
+\end{tabular}
+\smallskip\\
+\footnotesize\textit{Note: DM test null hypothesis: equal predictive accuracy. Bold entries indicate rejection at 5\% level. ``Baseline'' refers to EGARCH(1,1). Mean Diff. = mean(baseline loss) $-$ mean(extended loss); positive values favor the extended model.}
+\end{table}
